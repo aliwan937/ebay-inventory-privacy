@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Personal eBay inventory service — privacy notice</title><style>body{font:16px/1.7 system-ui,sans-serif;background:#f6f8fc;color:#27334b;margin:0;padding:10vh 24px}main{max-width:680px;margin:auto;background:white;padding:32px;border:1px solid #e4e8f0;border-radius:14px}h1{font-size:25px;line-height:1.3}p{white-space:pre-line;color:#5b6780}</style><main><h1>Personal eBay inventory service — privacy notice</h1><p>Purpose: this service is intended for the operator’s own eBay listing management. It is independent of Crosslist.
+
+Data: the local application is intended to store authorized listing details, images or image URLs, marketplace identifiers, and connection tokens on the operator’s computer. This HTTPS relay transiently handles the eBay authorization code and state. It does not store eBay passwords or OAuth tokens. Cloudflare processes the HTTP requests used to operate the relay.
+
+Notifications: account-deletion messages, their raw signed payloads and receipt times are stored in a private Cloudflare D1 inbox until the local processor verifies them and confirms completion. An unverified notification is not authority to delete data.
+
+Retention and control: the operator can revoke this application in eBay account settings and remove its local credentials and data. Verified deletion notifications must be processed by the local backend before it resumes account operations.
+
+No sale of data, advertising profiles, or analytics scripts are implemented by this relay. The operator must review this notice against the completed local application before enabling production access.</p></main></html>
